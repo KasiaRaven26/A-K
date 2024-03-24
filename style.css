@@ -1,0 +1,182 @@
+h1 {
+  font-size: 35px;
+  color: rgb(193, 73, 73);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  text-transform: capitalize;
+  padding: 20px;
+  /* margin-top: 200px; */
+}
+p {
+  font-size: 25px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  line-height: 2;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(232, 205, 170);
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  font-size: small;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.style-paragraph {
+  text-decoration: underline;
+}
+.style-paragraph:hover {
+  background-color: rgba(240, 248, 255, 0.268);
+  transform: scale(0.9);
+}
+
+.logo {
+  width: 300px;
+  height: auto;
+  padding: 40px;
+}
+@-webkit-keyframes slide-right {
+  100% {
+    left: 0;
+  }
+}
+@keyframes slide-right {
+  100% {
+    left: 0;
+  }
+}
+.slide-in-div {
+  left: -750px;
+  position: absolute;
+  -webkit-animation: slide-right 0.5s forwards;
+  -webkit-animation-delay: 1s;
+  animation: slide-right 0.5s forwards;
+  animation-delay: 0.5s;
+}
+#demo {
+  position: relative;
+  top: -600px;
+  left: 100px;
+  -webkit-animation: slide-down 2s forwards;
+  -webkit-animation-delay: 0.5s;
+  animation: slide-down 2s forwards;
+  animation-delay: 0.5s;
+  transition-timing-function: ease-out;
+}
+@-webkit-keyframes slide-down {
+  100% {
+    top: 0;
+  }
+}
+@keyframes slide-down {
+  to {
+    top: 500px;
+  }
+}
+.about {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  font-style: italic;
+  padding: 100px;
+  position: absolute;
+}
+.what-doing {
+  margin-left: 150px;
+}
+.pictures {
+  margin-left: 200px;
+  margin-top: 200px;
+}
+.pictures2 {
+  width: 600px;
+  height: 500px;
+  margin-left: 100px;
+  margin-bottom: 250px;
+}
+.background {
+  background-color: rgba(124, 123, 123, 0.487);
+}
+.caption {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px;
+  font-weight: lighter;
+  color: rgb(184, 95, 95);
+  margin-top: 10px;
+  padding: 5px;
+  display: contents;
+}
+.caption2 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  font-weight: lighter;
+  color: rgb(184, 95, 95);
+  margin-top: 10px;
+  padding: 5px;
+  display: contents;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 50px;
+  column-gap: 80px;
+}
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.menu-main {
+  position: absolute;
+  left: 25%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  margin-top: -100px;
+  width: 650px;
+  height: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu-main a {
+  font-size: 100px;
+  margin-right: 300px;
+  margin-top: 100px;
+  color: black;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 150;
+}
+.menu-main .slash1 {
+  position: absolute;
+  top: 45%;
+  left: 100%;
+  margin-left: -30px;
+  height: 3px;
+  width: 300px;
+  background: white;
+  transform: rotate(-28deg) translate(-50%, -50%);
+  transform-origin: 0 0;
+}
+
+.menu-main .slash2 {
+  position: absolute;
+  top: 35%;
+  left: 200%;
+  margin-left: -30px;
+  height: 3px;
+  width: 280px;
+  background: white;
+  transform: rotate(-90deg) translate(-75%, -75%);
+  transform-origin: 0 0;
+}
