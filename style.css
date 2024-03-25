@@ -3,13 +3,25 @@
 
 body {
   background-color: rgb(232, 205, 170);
+
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.79);
+
 }
 
+a:hover{
+  text-decoration: none;
+   color:rgba(243, 242, 242, 0.885);
+
+}
 header {
   display: flex;
   justify-content: flex-end;
   padding: 30px 50px;
   column-gap: 80px;
+  font-style: italic;
 }
 
 .background {
@@ -19,6 +31,20 @@ header {
 
 /* Styling for screen size width between 200px and 1600px */
 @media only screen and (min-width: 200px) and (max-width:1600px) {
+
+  .background {
+    background-color: rgba(221, 155, 155, 0.487);
+  }
+
+
+  h1 {
+    font-size: 25px;
+    color: rgb(237, 104, 104);
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 100;
+    text-transform: capitalize;
+    padding: 20px;
+  }
 
   p {
     font-size: 25px;
@@ -31,29 +57,93 @@ header {
   .pictures {
     height: 500px;
     width: 400px;
-    margin-left: 150px;
-    margin-top: 200px;
+    margin-left: 100px;
+    margin-top: 15px;
+    padding:40px 160px 40px 160px;
+    background-color: rgba(234, 239, 243, 0.376);
+    
   }
   .pictures2 {
     width: 550px;
     height: 450px;
     margin-top: 100px;
-    margin-left: 500px;
     margin-bottom: 100px;
+    padding:40px 160px 40px 160px;
+    background-color: rgba(234, 239, 243, 0.376);
+    float: right;
   }
 
 .pictures3 {
   width: 300px;
     height: 600px;
     margin-top: 30px;
-    margin-left: 150px;
-    margin-bottom: 250px;
+    margin-left: 100px;
+    padding:40px 160px 40px 160px;
+    background-color: rgba(234, 239, 243, 0.376);
 }
 
   .container {
     display: inline-block;
     cursor: pointer;
   }
+
+  .caption1 {
+   font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    font-weight:500;
+    color: rgba(0, 0, 0, 0.79);
+    padding: 15px;
+    margin:auto;
+    transition: 0.5s;
+    }
+    .caption1:hover {
+      font-family: "Courier New", Courier, monospace;
+       font-size: 33px;
+       font-weight:500;
+       color: rgba(243, 242, 242, 0.885);
+       padding: 15px;
+       margin:auto;
+       transition:0.5s;
+       }
+
+  .caption2 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    font-weight: 500;
+    color:rgba(0, 0, 0, 0.79);
+    margin-top: 10px;
+    margin-right: 50px;
+    transition: 0.5s;
+    }
+.caption2:hover {
+  font-family: "Courier New", Courier, monospace;
+    font-size: 33px;
+    font-weight: 500;
+    color:rgba(243, 242, 242, 0.885);
+    margin-top: 10px;
+    margin-right: 50px;
+    transition:0.5s;
+}
+  .caption3 {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 30px;
+    font-weight:500;
+    color: rgba(0, 0, 0, 0.79);
+    padding: 15px;
+    margin-left:50px;
+    transition: 0.5s;
+    }
+.caption3:hover {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 33px;
+  font-weight:500;
+  color: rgba(243, 242, 242, 0.885);
+  padding: 15px;
+  margin-left:50px;
+  transition: 0.5s;
+}
+
+
 
 
   .logo {
@@ -131,7 +221,7 @@ header {
   }
   .menu-main .slash1 {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 65%;
     margin-left: -30px;
     height: 3px;
@@ -143,7 +233,7 @@ header {
   
   .menu-main .slash2 {
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 135%;
     margin-left: -30px;
     height: 3px;
@@ -153,7 +243,13 @@ header {
     transform-origin: 0 0;
   }
 
+.picture-background {
+  display: flex;
+ align-items: center;
+ 
 
+  
+}
 
 
 }
@@ -259,23 +355,24 @@ header {
     margin-bottom: 250px;
   }
 
-  .caption {
+  .caption1 {
     font-family: "Courier New", Courier, monospace;
     font-size: 40px;
     font-weight: lighter;
     color: rgb(184, 95, 95);
-    margin-top: 10px;
+    position: top;
     padding: 5px;
-    display: contents;
+    display:flex;
+    
   }
   .caption2 {
     font-family: "Courier New", Courier, monospace;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: lighter;
     color: rgb(184, 95, 95);
     margin-top: 10px;
     padding: 5px;
-    display: contents;
+    
   }
   header {
     display: flex;
