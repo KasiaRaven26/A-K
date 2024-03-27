@@ -1,9 +1,18 @@
+ @import url('https://fonts.cdnfonts.com/css/crimson-text');
+
+               
+
+
 
 /* Global styling */
 
 body {
-  background-color: rgb(232, 205, 170);
+  background-color: #9d9898ac
 
+}
+
+.body-yellow {
+  background-color: rgba(109, 169, 197, 0.528);
 }
 a {
   text-decoration: none;
@@ -19,13 +28,14 @@ a:hover{
 header {
   display: flex;
   justify-content: flex-end;
-  padding: 30px 50px;
+  padding: 30px 30px;
   column-gap: 80px;
-  font-style: italic;
-}
+  }
+  
+
 
 .background {
-  background-color: rgba(124, 123, 123, 0.487);
+  background-color: rgba(186, 171, 171, 0.441);
 }
 
 
@@ -36,14 +46,46 @@ header {
     background-color: rgba(221, 155, 155, 0.487);
   }
 
+  
+  .blue-main {
+    width:450px;
+    height: 600px;
+    transform: rotate(90deg);
+    max-width: 100%;
 
-  h1 {
-    font-size: 25px;
-    color: rgb(237, 104, 104);
-    font-family: "Courier New", Courier, monospace;
+    
+  }
+
+  .image-container {
+    margin-top: 80px;
+    margin-left: 150px;
+
+  }
+
+  .image-container h1 {
+    position: absolute;
+    top:450px;
+    right: 170px;
+
+  }
+
+
+  .main-picture {
+    width:600px;
+    height: 450px;;
+    margin-top:150px;
+    max-width: 100%;
+   }
+
+h1 {
+    font-size: 30px;
+    color: #848585;
+    font-family: 'Crimson Text', serif;
     font-weight: 100;
-    text-transform: capitalize;
-    padding: 20px;
+    letter-spacing: 2px;
+    
+    
+
   }
 
   p {
@@ -52,6 +94,7 @@ header {
     font-weight: 100;
     line-height: 2;
     text-align: center;
+    
   }
 
   .pictures {
@@ -147,8 +190,9 @@ header {
 
 
   .logo {
-    width: 300px;
+    width: 150px;
     height: auto;
+    margin-left: 20px;
     
   }
   @-webkit-keyframes slide-right {
@@ -172,7 +216,7 @@ header {
   #demo {
     position: absolute;
     top: -600px;
-    left: 550px;
+    left: 500px;
     -webkit-animation: slide-down 2s forwards;
     -webkit-animation-delay: 0.5s;
     animation: slide-down 2s forwards;
@@ -218,7 +262,24 @@ header {
     text-decoration: none;
     font-family: "Courier New", Courier, monospace;
     font-weight: 150;
+    transition: 0.5s;
   }
+
+  .menu-main a:hover {
+
+    font-size: 52px;
+    margin-right: 300px;
+    margin-top: 100px;
+    color:white;
+    text-decoration: none;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 150;
+    transition: 0.5s;
+  }
+
+
+
+
   .menu-main .slash1 {
     position: absolute;
     top: 35%;
