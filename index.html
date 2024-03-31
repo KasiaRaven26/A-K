@@ -5,20 +5,12 @@
     <link href="style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width  , initial-scale=1.0" />
     <link href="https://fonts.cdnfonts.com/css/crimson-text" rel="stylesheet">
-                
     <title>A&K Fullstack development service</title>
-    <style> @import url('https://fonts.cdnfonts.com/css/crimson-text');
-    </style>
+    <style> @import url('https://fonts.cdnfonts.com/css/crimson-text');</style>
   </head>
   <body> 
-    <div class="image-import"></div>
+    <!-- <div class="image-import"></div> -->
     <header> 
-    <div class="image-container">
-      <img class="blue-main" src="blue-main.jpg"></img>
-      <img class="main-picture" src="main-picture.jpg"></img>
-      <h1>Where creativity meets knowledge...</h1>
-
-    </div>
       <div class="slide-in-div">
         <a href="#"> <img
          src="AKlogo.jpg"
@@ -28,18 +20,24 @@
          class="logo"
        />
        </a>
-       <h1 class="what-doing"></h1>
-   <p class="about"></p>
        </div>
-     <a href="menu.html">
-      <div class="container">
+       <a href="menu.html">
+      <div class="container" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
-     </a> 
+    </a>
       </header>
+    <div class="image-container">
+      <img class="blue-main" src="blue-main.jpg"></img>
+      <img class="main-picture" src="main-picture.jpg"></img>
+      <h1>Where creativity meets knowledge...</h1>
+
+    </div>
+
+     <a href="menu.html">
+
    
     
 <div id="demo">
@@ -50,7 +48,11 @@
 </div>
 </body>
 
-<script></script>
+<script>
+  function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
 
 
 
