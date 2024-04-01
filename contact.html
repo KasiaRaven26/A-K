@@ -3,31 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <link href="style.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CONTACT</title>
   </head>
-  <body class="contact-background">
-    <header>
-      <div class="slide-in-div">
-        <a href="/index.html"> <img
-         src="AKlogo.jpg"
-         alt="HTML code on a screen"
-         width="300"
-         height="200"
-         class="logo"
-       />
-       </a>
-      </div>
-      <a href="menu.html">
-        <div class="container">
+  <body id="menu-open" class="contact-background"> 
+      <header> 
+        <div class="slide-in-div">
+          <a href="/index.html"> <img
+           src="AKlogo.jpg"
+           alt="HTML code on a screen"        
+           class="logo"
+         />
+         </a>
+         </div>
+         <a href="#">
+        <div class="container" onclick="myFunction(this)">
           <div class="bar1"></div>
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-      </a>
-    
-    </header>
-<h1 class="header-contact">CONTACT US</h1>
- <p class="contact-section"> A&KDEVELOPMENT@GMAIL.COM</p>
-<img class="profile-picture" src="Kasiaprofile.jpg"> </img>
+       </a>
+        </header>
+      <h1 class="header-contact">CONTACT US</h1>
+      <p class="contact-section"> A&KDEVELOPMENT@GMAIL.COM</p>
+      <img class="profile-picture" src="Kasiaprofile.jpg"> </img>
+      <script>
+        function myFunction(x) {
+          var element = document.getElementById("menu");
+        element.classList.toggle("menu-open");
+        x.classList.toggle("change");
+        };
+      </script>
   </body>
 </html>

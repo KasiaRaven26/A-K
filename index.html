@@ -4,38 +4,46 @@
     <meta charset="UTF-8" />
     <link href="style.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.cdnfonts.com/css/crimson-text" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/crimson-text" rel="stylesheet" />
     <title>A&K Fullstack development service</title>
-    <style> @import url('https://fonts.cdnfonts.com/css/crimson-text');</style>
+    <style>
+      @import url('https://fonts.cdnfonts.com/css/crimson-text');
+    </style>
   </head>
-  <body> 
-    <!-- <div class="image-import"></div> -->
-    <header> 
+  <body id="menu-open">
+    <header>
       <div class="slide-in-div">
-        <a href="/index.html"> <img
-         src="AKlogo.jpg"
-         alt="HTML code on a screen"        
-         class="logo"
-       />
-       </a>
-       </div>
-       <a href="#">
-      <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+        <a href="/index.html">
+          <img src="AKlogo.jpg" alt="HTML code on a screen" class="logo" />
+        </a>
       </div>
-     </a>
-      </header>
-      <section id="index-section1">
-        <b>Where creativity meets knowledge...</b>
-          <img class="blue-main" src="blue-main.jpg" >
-      </section>
-  
-<script>
-  function myFunction(x) {
-  x.classList.toggle("change");
-}
-</script>
-</body>
+      <a href="#">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
+    </header>
+    <section id="menu">
+      <!-- <h1>Please find my Github account here:</h1>
+        <a href="https://github.com/KasiaRaven26">Github</a> -->
+      <a href="/index.html"><h1>Home</h1></a>
+      <a href="/menu.html"><h1>Menu</h1></a>
+      <a href="/about.html"><h1>About</h1> </a>
+      <a href="/projects.html"><h1>Projects</h1></a>
+      <a href="/contact.html"><h1>Contact</h1></a>
+    </section>
+    <section id="index-section1">
+      <b>Where creativity meets knowledge...</b>
+      <img class="blue-main" src="blue-main.jpg" />
+    </section>
+    <script>
+      function myFunction(x) {
+        var element = document.getElementById('menu')
+        element.classList.toggle('menu-open')
+        x.classList.toggle('change')
+      }
+    </script>
+  </body>
 </html>
