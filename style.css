@@ -45,6 +45,77 @@ a:hover {
 
 /* For mobile phones */
 @media only screen and (max-width: 770px) {
+
+  .menu-main {
+    position: absolute;
+    left: 30%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    margin-top: -100px;
+    width: 650px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-main a {
+    font-size: 50px;
+    margin-right: 300px;
+    margin-top: 100px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 150;
+    transition: 0.5s;
+  }
+
+  .menu-main a::before {
+    font-size: 52px;
+    content: attr(data);
+    display: block;
+    font-weight: 150;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .menu-main a:hover {
+    font-size: 52px;
+    margin-right: 300px;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 150;
+    transition: 0.5s;
+  }
+
+  .menu-main .slash1 {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    margin-left: -30px;
+    height: 3px;
+    width: 300px;
+    background: white;
+    transform: rotate(-28deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+  }
+
+  .menu-main .slash2 {
+    position: absolute;
+    top: 25%;
+    left: 135%;
+    margin-left: -30px;
+    height: 3px;
+    width: 280px;
+    background: white;
+    transform: rotate(-90deg) translate(-75%, -75%);
+    transform-origin: 0 0;
+  }
+
+
+
+
   .container {
     display: inline-block;
     cursor: pointer;
@@ -191,6 +262,37 @@ a:hover {
 
 /* Styling for screen size width between 200px and 1600px */
 @media only screen and (min-width: 770px) and (max-width: 1600px) {
+  header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 20px;
+    z-index: 10;
+  }
+
+  #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    transform: translate(0, -100%);
+    transition: 0.5s ease;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  #menu.menu-open {
+    transform: translate(0, 0);
+  }
+
+
   .profile-picture {
     width: 300px;
     height: 348px;
