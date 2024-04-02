@@ -30,14 +30,7 @@ a:hover {
   color: rgba(243, 242, 242, 0.885);
 }
 
-.header-about {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 50px;
-  letter-spacing: 5px;
-  color: rgba(243, 242, 242, 0.885);
-  margin-left: 80px;
-  font-weight: 500;
-}
+
 
 .background {
   background-color: rgba(186, 171, 171, 0.441);
@@ -45,6 +38,64 @@ a:hover {
 
 /* For mobile phones */
 @media only screen and (max-width: 770px) {
+
+  .menu-main a {
+    font-size: 50px;
+    margin-right: 300px;
+    margin-top: 100px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 150;
+    transition: 0.5s;
+  }
+
+  .menu-main a::before {
+    font-size: 52px;
+    content: attr(data);
+    display: block;
+    font-weight: 150;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+  }
+
+  .menu-main a:hover {
+    font-size: 52px;
+    margin-right: 300px;
+    margin-top: 100px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 150;
+    transition: 0.5s;
+  }
+
+  .menu-main .slash1 {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    margin-left: -30px;
+    height: 3px;
+    width: 300px;
+    background: white;
+    transform: rotate(-28deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+  }
+
+  .menu-main .slash2 {
+    position: absolute;
+    top: 25%;
+    left: 135%;
+    margin-left: -30px;
+    height: 3px;
+    width: 280px;
+    background: white;
+    transform: rotate(-90deg) translate(-75%, -75%);
+    transform-origin: 0 0;
+  }
+
+
   .container {
     display: inline-block;
     cursor: pointer;
@@ -109,6 +160,13 @@ a:hover {
     );
   }
 
+  .header-about {
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    color: rgba(243, 242, 242, 0.885);
+    font-weight: 500;
+  }
+
   .logo {
     width: 80px;
     height: auto;
@@ -147,7 +205,7 @@ a:hover {
     transform: translate(0, -11px) rotate(45deg);
   }
 
-  .projects-section {
+  .projects-section, .about-section, .menu-section{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -156,37 +214,15 @@ a:hover {
 
   .pictures {
     max-width: 80vw;
-    /* height: 500px;
-    width: 400px;
-    margin-left: 100px;
-    margin-top: 15px;
-    padding: 40px 160px 40px 160px;
-    background-color: rgba(234, 239, 243, 0.376); */
   }
 
   .pictures2 {
     max-width: 80vw;
-    /* width: 550px;
-    height: 450px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    padding: 40px 160px 40px 160px;
-    background-color: rgba(234, 239, 243, 0.376);
-    float: right; */
   }
 
   .pictures3 {
-    max-width: 90VW;
-    /* width: 300px;
-    height: 600px;
-    margin-top: 30px;
-    margin-left: 100px;
-    padding: 40px 160px 40px 160px;
-    background-color: rgba(234, 239, 243, 0.376); */
+    max-width: 80VW;
   }
-
-
-
 }
 
 /* Styling for screen size width between 200px and 1600px */

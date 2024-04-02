@@ -7,22 +7,19 @@
     <title>CONTACT</title>
   </head>
   <body class="body-yellow">
-    <header> 
+    <header>
       <div class="slide-in-div">
-        <a href="/index.html"> <img
-         src="AKlogo.jpg"
-         alt="HTML code on a screen"        
-         class="logo"
-       />
-       </a>
-       </div>
-       <a href="#">
-      <div class="container" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+        <a href="/index.html">
+          <img src="AKlogo.jpg" alt="HTML code on a screen" class="logo" />
+        </a>
       </div>
-     </a>
+      <a href="#">
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </a>
     </header>
     <section id="menu">
       <!-- <h1>Please find my Github account here:</h1>
@@ -32,19 +29,27 @@
       <a href="/about.html"><h1>About</h1> </a>
       <a href="/projects.html"><h1>Projects</h1></a>
     </section>
-    <div class="menu-main">
-      <a  data="PROJECTS" href="projects.html">PROJECTS</a>
+    <section class="menu-section">
+      <!-- <div class="menu-main"> -->
+      <a data="PROJECTS" href="projects.html">
+        <h1>PROJECTS</h1>
+      </a>
       <span class="slash1"></span>
-      <a data="ABOUT" href="about.html">ABOUT</a>
+      <a data="ABOUT" href="about.html">
+        <h1>ABOUT</h1>
+      </a>
       <span class="slash2"></span>
-      <a data="CONTACT" href="contact.html">CONTACT</a>
-    </div>
+      <a data="CONTACT" href="contact.html">
+        <h1>CONTACT</h1>
+      </a>
+      <!-- </div> -->
+    </section>
     <script>
       function myFunction(x) {
-        var element = document.getElementById("menu");
-      element.classList.toggle("menu-open");
-      x.classList.toggle("change");
-      };
+        var element = document.getElementById('menu')
+        element.classList.toggle('menu-open')
+        x.classList.toggle('change')
+      }
     </script>
   </body>
 </html>
