@@ -104,7 +104,6 @@ a:hover {
   .profile-picture {
     width: 300px;
     height: 348px;
-    margin-left: 40px;
     margin-top:10px;
   }
 
@@ -127,11 +126,16 @@ a:hover {
     z-index: 9;
     transform: translate(0, -100%);
     transition: 0.5s ease;
-    background-color: antiquewhite;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
+    background-color:rgba(124, 172, 202, 0.856);
+  
+   
+  
+   
   }
 
   #menu.menu-open {
@@ -179,15 +183,27 @@ a:hover {
   letter-spacing: 5px;
   color: rgba(243, 242, 242, 0.885);
   font-weight: 500;
-  margin-left: 20px;
+  
 
 }
 
+
+ .contact-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+ 
+  }
+
+
+
+
 p.contact-section {
 
-  position: absolute;
+  /* position: absolute;
     top: -50px;
-    left: 150px;
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
@@ -197,7 +213,10 @@ p.contact-section {
     -webkit-animation-delay: 0.5s;
     animation: contact-section-slide 2s forwards;
     animation-delay: 0.5s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-out; */
+
+
+
 }
 
   .logo {
@@ -235,7 +254,7 @@ p.contact-section {
   }
 
   .change .bar3 {
-    transform: translate(0, -11px) rotate(45deg);
+    transform: translate(0, -9px) rotate(45deg);
   }
 
   .projects-section, .about-section, .menu-section{
@@ -243,6 +262,7 @@ p.contact-section {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    
   }
 
   .pictures {
@@ -267,6 +287,7 @@ p.contact-section {
     margin: auto;
     transition: 0.5s;
     letter-spacing: 2px;
+    margin-left:80px;
   }
 
   /* .caption1:hover {
@@ -288,6 +309,7 @@ p.contact-section {
     margin-top: 10px;
     padding: 5px;
     letter-spacing: 2px;
+    margin-left: 100px;
   }
 
   .caption3 {
@@ -299,6 +321,7 @@ p.contact-section {
     margin-left: 50px;
     transition: 0.5s;
     letter-spacing: 2px;
+    margin-left:120px;
   }
 
   .pictures {
@@ -352,6 +375,7 @@ p.contact-section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    
   }
 
   #menu.menu-open {
@@ -362,7 +386,7 @@ p.contact-section {
   .profile-picture {
     width: 300px;
     height: 348px;
-    margin-left: 50px;
+    margin-left: 65px;
     margin-top: 200px;
   }
 
@@ -452,11 +476,12 @@ p.contact-section {
   }
 
   h1 {
-    font-size: 30px;
-    color: #848585;
+    font-size: 50px;
+    color: rgba(243, 242, 242, 0.885);
     font-family: 'Crimson Text', serif;
     font-weight: 100;
     letter-spacing: 2px;
+    margin-left: 50px;
   }
 
   p {
