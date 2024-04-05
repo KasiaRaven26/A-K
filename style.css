@@ -104,7 +104,14 @@ a:hover {
   .profile-picture {
     width: 300px;
     height: 348px;
+    margin-left: 40px;
+    margin-top:10px;
   }
+
+  .background {
+    background-color: rgba(221, 155, 155, 0.487);
+  }
+
 
   body {
     height: 100vh;
@@ -146,10 +153,10 @@ a:hover {
 
   #index-section1 b {
     font-family: 'Crimson Text';
-    font-size: 27px;
+    font-size: 30px;
     font-weight: 300;
-    color: rgba(242, 242, 226, 0.643);
-    margin-left: 40px;
+    color: rgba(214, 214, 198, 0.726);
+    margin-left: 50px;
   }
   .blue-main {
     width: 100vw;
@@ -166,6 +173,32 @@ a:hover {
     color: rgba(243, 242, 242, 0.885);
     font-weight: 500;
   }
+
+.header-contact {
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 5px;
+  color: rgba(243, 242, 242, 0.885);
+  font-weight: 500;
+  margin-left: 20px;
+
+}
+
+p.contact-section {
+
+  position: absolute;
+    top: -50px;
+    left: 150px;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    letter-spacing: 5px;
+    margin-top: 250px;
+    -webkit-animation: contact-section-slide 2s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: contact-section-slide 2s forwards;
+    animation-delay: 0.5s;
+    transition-timing-function: ease-out;
+}
 
   .logo {
     width: 80px;
@@ -186,8 +219,8 @@ a:hover {
   .bar1,
   .bar2,
   .bar3 {
-    width: 45px;
-    height: 5px;
+    width: 35px;
+    height: 4px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
@@ -223,7 +256,75 @@ a:hover {
   .pictures3 {
     max-width: 80VW;
   }
+
+
+  .caption1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.79);
+    padding: 15px;
+    margin: auto;
+    transition: 0.5s;
+    letter-spacing: 2px;
+  }
+
+  /* .caption1:hover {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(243, 242, 242, 0.885);
+    padding: 15px;
+    margin: auto;
+    transition: 0.5s;
+  } */
+
+
+  .caption2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(184, 95, 95);
+    margin-top: 10px;
+    padding: 5px;
+    letter-spacing: 2px;
+  }
+
+  .caption3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.79);
+    padding: 15px;
+    margin-left: 50px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+  }
+
+  .pictures {
+
+
+    padding: 15px 40px 15px 40px;
+    background-color: rgba(234, 239, 243, 0.376);
+  }
+  
+  
+  .pictures2 {
+    padding: 15px 40px 15px 40px;
+    background-color: rgba(234, 239, 243, 0.376);
 }
+
+
+.pictures3 {
+
+  padding: 15px 40px 15px 40px;
+    background-color: rgba(234, 239, 243, 0.376);
+}
+
+  }
+
+
+
 
 /* Styling for screen size width between 200px and 1600px */
 @media only screen and (min-width: 770px) and (max-width: 1600px) {
@@ -261,8 +362,8 @@ a:hover {
   .profile-picture {
     width: 300px;
     height: 348px;
-    margin-left: 350px;
-    margin-top: 160px;
+    margin-left: 50px;
+    margin-top: 200px;
   }
 
   header {
