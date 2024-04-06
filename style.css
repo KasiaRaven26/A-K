@@ -39,18 +39,33 @@ a:hover {
 /* For mobile phones */
 @media only screen and (max-width: 770px) {
 
-  /* .menu-main a {
+   .menu-main a {
     font-size: 50px;
-    margin-right: 300px;
-    margin-top: 100px;
     color: black;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+    /* margin-right: 300px;
+    margin-top: 100px;
+
     font-weight: 150;
-    transition: 0.5s;
+    transition: 0.5s; */
   }
 
-  .menu-main a::before {
+  .menu-main .slash1 {
+    height: 3px;
+    width: 200px;
+    background: white;
+    transform-origin: 0 0;
+  }
+
+  .menu-main .slash2 {
+    height: 3px;
+    width: 200px;
+    background: white;
+    transform-origin: 0 0;
+  }
+
+  /* .menu-main a::before {
     font-size: 52px;
     content: attr(data);
     display: block;
@@ -71,17 +86,7 @@ a:hover {
     transition: 0.5s;
   }
 
-  .menu-main .slash1 {
-    position: absolute;
-    top: 35%;
-    left: 65%;
-    margin-left: -30px;
-    height: 3px;
-    width: 300px;
-    background: white;
-    transform: rotate(-28deg) translate(-50%, -50%);
-    transform-origin: 0 0;
-  }
+
 
   .menu-main .slash2 {
     position: absolute;
@@ -258,6 +263,7 @@ p.contact-section {
   }
 
   .projects-section, .about-section, .menu-main{
+    height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
