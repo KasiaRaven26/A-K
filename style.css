@@ -44,11 +44,6 @@ a:hover {
     color: black;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    /* margin-right: 300px;
-    margin-top: 100px;
-
-    font-weight: 150;
-    transition: 0.5s; */
   }
 
   .menu-main .slash1 {
@@ -64,42 +59,6 @@ a:hover {
     background: white;
     transform-origin: 0 0;
   }
-
-  /* .menu-main a::before {
-    font-size: 52px;
-    content: attr(data);
-    display: block;
-    font-weight: 150;
-    height: 0;
-    overflow: hidden;
-    visibility: hidden;
-  }
-
-  .menu-main a:hover {
-    font-size: 52px;
-    margin-right: 300px;
-    margin-top: 100px;
-    color: white;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 150;
-    transition: 0.5s;
-  }
-
-
-
-  .menu-main .slash2 {
-    position: absolute;
-    top: 25%;
-    left: 135%;
-    margin-left: -30px;
-    height: 3px;
-    width: 280px;
-    background: white;
-    transform: rotate(-90deg) translate(-75%, -75%);
-    transform-origin: 0 0;
-  } */
-
 
   .container {
     display: inline-block;
@@ -137,10 +96,6 @@ a:hover {
     flex-direction: column;
     font-family:'Courier New', Courier, monospace;
     background-color:rgba(124, 172, 202, 0.856);
-  
-   
-  
-   
   }
 
   #menu.menu-open {
@@ -201,29 +156,6 @@ a:hover {
   height: 100%;
  
   }
-
-
-
-
-p.contact-section {
-
-  /* position: absolute;
-    top: -50px;
-    font-size: 12px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 100;
-    letter-spacing: 5px;
-    margin-top: 250px;
-    -webkit-animation: contact-section-slide 2s forwards;
-    -webkit-animation-delay: 0.5s;
-    animation: contact-section-slide 2s forwards;
-    animation-delay: 0.5s;
-    transition-timing-function: ease-out; */
-
-
-
-}
-
   .logo {
     width: 80px;
     height: auto;
@@ -296,17 +228,6 @@ p.contact-section {
     margin-left:80px;
   }
 
-  /* .caption1:hover {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 18px;
-    font-weight: 500;
-    color: rgba(243, 242, 242, 0.885);
-    padding: 15px;
-    margin: auto;
-    transition: 0.5s;
-  } */
-
-
   .caption2 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
@@ -349,11 +270,7 @@ p.contact-section {
   padding: 15px 40px 15px 40px;
     background-color: rgba(234, 239, 243, 0.376);
 }
-
   }
-
-
-
 
 /* Styling for screen size width between 200px and 1600px */
 @media only screen and (min-width: 770px) and (max-width: 1600px) {
@@ -392,8 +309,6 @@ p.contact-section {
   .profile-picture {
     width: 300px;
     height: 348px;
-    margin-left: 65px;
-    margin-top: 200px;
   }
 
   header {
@@ -427,24 +342,20 @@ p.contact-section {
     font-size: 50px;
     letter-spacing: 5px;
     color: rgba(243, 242, 242, 0.885);
-    margin-left: 80px;
     font-weight: 500;
   }
 
   .contact-section {
-    position: absolute;
-    top: -200px;
-    left: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+
     font-size: 25px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 100;
     letter-spacing: 5px;
-    margin-top: 100px;
-    -webkit-animation: contact-section-slide 2s forwards;
-    -webkit-animation-delay: 0.5s;
-    animation: contact-section-slide 2s forwards;
-    animation-delay: 0.5s;
-    transition-timing-function: ease-out;
+
   }
 
   @-webkit-keyframes contact-section-slide {
@@ -463,8 +374,6 @@ p.contact-section {
   }
 
   .blue-main {
-    /* width:450px;
-    height: 600px; */
     flex-basis: 100px;
     transform: rotate(90deg);
     max-width: 30%;
