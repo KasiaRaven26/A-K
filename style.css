@@ -39,33 +39,18 @@ a:hover {
 /* For mobile phones */
 @media only screen and (max-width: 770px) {
 
-   .menu-main a {
+  /* .menu-main a {
     font-size: 50px;
+    margin-right: 300px;
+    margin-top: 100px;
     color: black;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    /* margin-right: 300px;
-    margin-top: 100px;
-
     font-weight: 150;
-    transition: 0.5s; */
+    transition: 0.5s;
   }
 
-  .menu-main .slash1 {
-    height: 3px;
-    width: 200px;
-    background: white;
-    transform-origin: 0 0;
-  }
-
-  .menu-main .slash2 {
-    height: 3px;
-    width: 200px;
-    background: white;
-    transform-origin: 0 0;
-  }
-
-  /* .menu-main a::before {
+  .menu-main a::before {
     font-size: 52px;
     content: attr(data);
     display: block;
@@ -86,7 +71,17 @@ a:hover {
     transition: 0.5s;
   }
 
-
+  .menu-main .slash1 {
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    margin-left: -30px;
+    height: 3px;
+    width: 300px;
+    background: white;
+    transform: rotate(-28deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+  }
 
   .menu-main .slash2 {
     position: absolute;
@@ -110,6 +105,7 @@ a:hover {
     width: 300px;
     height: 348px;
     margin-top:10px;
+    margin-bottom: 10px;
   }
 
   .background {
@@ -181,6 +177,7 @@ a:hover {
     letter-spacing: 5px;
     color: rgba(243, 242, 242, 0.885);
     font-weight: 500;
+    margin-right:150px;
   }
 
 .header-contact {
@@ -188,6 +185,7 @@ a:hover {
   letter-spacing: 5px;
   color: rgba(243, 242, 242, 0.885);
   font-weight: 500;
+  margin-right:150px;
   
 
 }
@@ -199,6 +197,10 @@ a:hover {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  letter-spacing: 2px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+
  
   }
 
@@ -263,7 +265,6 @@ p.contact-section {
   }
 
   .projects-section, .about-section, .menu-main{
-    height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -394,6 +395,7 @@ p.contact-section {
     height: 348px;
     margin-left: 65px;
     margin-top: 200px;
+    
   }
 
   header {
