@@ -17,8 +17,9 @@ body {
 }
 
 .body-yellow {
-  background-color: rgba(109, 169, 197, 0.528);
+  background-color: rgb(116 191 185 / 59%);
 }
+
 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.79);
@@ -39,11 +40,50 @@ a:hover {
 /* For mobile phones */
 @media only screen and (max-width: 770px) {
 
+  p {
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 100;
+    line-height: 2;
+    text-align: center;
+}
+  @-webkit-keyframes slide-down {
+    100% {
+      top: 0;
+    }
+  }
+
+  @keyframes slide-down {
+    to {
+      top: 300px;
+    }
+  }
+
+  .about-slide-in-div{
+    position: absolute;
+    top: -250px;
+    
+    -webkit-animation: slide-down 2s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide-down 2s forwards;
+    animation-delay: 0.2s;
+    transition-timing-function: ease-out;  
+  }
+
+  .menu-main{
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+   }
+
    .menu-main a {
-    font-size: 50px;
+    font-size: 25px;
     color: black;
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
+  
   }
 
   .menu-main .slash1 {
@@ -66,8 +106,8 @@ a:hover {
   }
 
   .profile-picture {
-    width: 300px;
-    height: 348px;
+    height: 210px;
+    width:auto;
     margin-top:10px;
   }
 
@@ -136,6 +176,11 @@ a:hover {
     letter-spacing: 5px;
     color: rgba(243, 242, 242, 0.885);
     font-weight: 500;
+    position: absolute;
+    left:50px;
+    top:200px;
+    font-size: 23px;
+    
   }
 
 .header-contact {
@@ -143,6 +188,7 @@ a:hover {
   letter-spacing: 5px;
   color: rgba(243, 242, 242, 0.885);
   font-weight: 500;
+  
   
 
 }
@@ -205,14 +251,23 @@ a:hover {
     transform: translate(0, -9px) rotate(45deg);
   }
 
-  .projects-section, .about-section, .menu-main{
+  .projects-section {
     height: 70vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    
-  }
+   }
+
+
+
+
+   .about-section{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+   }
 
   .pictures {
     max-width: 80vw;
@@ -337,6 +392,8 @@ a:hover {
     letter-spacing: 5px;
     color: rgba(243, 242, 242, 0.885);
     font-weight: 500;
+    position: relative;
+    left: -500px;
   }
 
   .contact-section {
@@ -552,6 +609,28 @@ a:hover {
     }
   }
 
+  .about-slide-in-div {
+    position: absolute;
+    top: -600px;
+    left: 600px;
+    -webkit-animation: slide-down 2s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide-down 2s forwards;
+    animation-delay: 0.2s;
+    transition-timing-function: ease-out;  
+  }
+
+  .contact-slide-in-div {
+    position: absolute;
+    top: -600px;
+    left: 600px;
+    -webkit-animation: slide-down 2s forwards;
+    -webkit-animation-delay: 0.5s;
+    animation: slide-down 2s forwards;
+    animation-delay: 0.2s;
+    transition-timing-function: ease-out;  
+  }
+
   .bar1,
   .bar2,
   .bar3 {
@@ -655,7 +734,7 @@ a:hover {
     font-weight: 100;
     text-transform: capitalize;
     padding: 20px;
-    /* margin-top: 200px; */
+    
   }
   p {
     font-size: 25px;
